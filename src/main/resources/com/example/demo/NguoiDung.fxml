@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" prefHeight="624.0" prefWidth="1341.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.NguoiDungController">
+   <children>
+      <TableView fx:id="table" layoutY="32.0" prefHeight="592.0" prefWidth="1073.0">
+        <columns>
+            <TableColumn fx:id="sttColumn" prefWidth="35.0" text="STT" />
+            <TableColumn fx:id="idColumn" prefWidth="129.0" text="MÃ NGƯỜI THUÊ" />
+          <TableColumn fx:id="nameColumn" prefWidth="119.0" text="TÊN" />
+            <TableColumn fx:id="phoneColumn" prefWidth="116.0" text="SĐT" />
+            <TableColumn fx:id="cccdColumn" prefWidth="119.0" text="SỐ CCCD" />
+            <TableColumn fx:id="ngaythueColumn" prefWidth="95.0" text="NGÀY THUÊ" />
+            <TableColumn fx:id="housetypeColumn" prefWidth="147.0" text="KIỂU NHÀ" />
+            <TableColumn fx:id="areaColumn" minWidth="0.0" prefWidth="141.0" text="KHU VỰC" />
+            <TableColumn fx:id="durationColumn" prefWidth="207.0" text="THỜI HẠN THUÊ" />
+        </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+      <TextField fx:id="cccdText" layoutX="1123.0" layoutY="223.0" prefHeight="31.0" prefWidth="187.0" promptText="Số CCCD/CMND" />
+      <TextField fx:id="phoneText" layoutX="1123.0" layoutY="177.0" prefHeight="31.0" prefWidth="187.0" promptText="Số điện thoại" />
+      <TextField fx:id="nameText" layoutX="1123.0" layoutY="129.0" prefHeight="31.0" prefWidth="187.0" promptText="Tên" />
+      <Label layoutX="842.0" layoutY="172.0" />
+      <Label layoutX="646.0" layoutY="172.0" />
+      <Button fx:id="addBtn" layoutX="1123.0" layoutY="456.0" mnemonicParsing="false" onAction="#themVaoBang" prefHeight="31.0" prefWidth="60.0" text="Thêm" />
+      <Button fx:id="deleteBtn" layoutX="1232.0" layoutY="456.0" mnemonicParsing="false" onAction="#xoaBang" prefHeight="31.0" prefWidth="60.0" text="Xóa" />
+      <ChoiceBox fx:id="housetypeBtn" layoutX="1121.0" layoutY="320.0" prefHeight="31.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="durationBtn" layoutX="1121.0" layoutY="412.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="areaBtn" layoutX="1121.0" layoutY="367.0" prefWidth="150.0" />
+      <MenuBar prefHeight="32.0" prefWidth="1341.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="updateBtn" layoutX="1163.0" layoutY="497.0" mnemonicParsing="false" onAction="#capnhatUser" prefHeight="31.0" prefWidth="94.0" text="Cập nhật">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button layoutX="1085.0" layoutY="552.0" mnemonicParsing="false" onAction="#xuatHopDong" prefHeight="58.0" prefWidth="245.0" text="Xuất hợp đồng thuê nhà" textFill="#0aa112">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Button>
+      <DatePicker fx:id="mydatePicker" layoutX="1123.0" layoutY="268.0" promptText="Chọn ngày thuê" />
+      <TextField fx:id="idText" layoutX="1123.0" layoutY="80.0" prefHeight="32.0" prefWidth="187.0" promptText="Mã người thuê" />
+      <Label layoutX="1257.0" layoutY="63.0" text="Label" />
+   </children>
+</AnchorPane>

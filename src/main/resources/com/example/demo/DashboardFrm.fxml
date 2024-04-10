@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.DashboardController">
+   <children>
+      <Button fx:id="btnThem" layoutX="26.0" layoutY="357.0" mnemonicParsing="false" text="Thêm" />
+      <Button fx:id="btnXoa" layoutX="145.0" layoutY="357.0" mnemonicParsing="false" text="Xóa" />
+      <Button fx:id="btnUpdate" layoutX="260.0" layoutY="357.0" mnemonicParsing="false" text="Cập nhật" />
+      <Button fx:id="btnSave" layoutX="396.0" layoutY="357.0" mnemonicParsing="false" text="Lưu" />
+      <MenuBar prefHeight="21.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="New" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="btnAbort" layoutX="488.0" layoutY="357.0" mnemonicParsing="false" text="Hủy bỏ" />
+      <Label fx:id="lbChonkieunha" layoutX="38.0" layoutY="49.0" text="Chọn kiểu nhà" />
+      <Label fx:id="lbThoihanthue" layoutX="38.0" layoutY="200.0" text="Thời hạn thuê" />
+      <Label fx:id="lbKhuvuc" layoutX="38.0" layoutY="128.0" text="Khu vực" />
+      <ChoiceBox fx:id="btnChonKieunha" layoutX="150.0" layoutY="44.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="btnKhuvuc" layoutX="150.0" layoutY="123.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="btnThoihanthue" layoutX="150.0" layoutY="195.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

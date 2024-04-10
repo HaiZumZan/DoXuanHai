@@ -1,0 +1,6 @@
+ICar{id=1, brand='Nokia', publishYear=2020, price=5.5, color='red'} Capacity: 798.0
+
+ICar{id=2, brand='Toyota', publishYear=2024, price=555.5, color='blue'} Slots 4 EngineType Max
+
+ICar{id=3, brand='Suzuki', publishYear=2023, price=555.6, color='black'} LoadWeight 22.4
+
